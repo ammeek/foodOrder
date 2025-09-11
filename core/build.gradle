@@ -25,8 +25,8 @@ dependencies {
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
 
-    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.19.2'
-    runtimeOnly 'com.fasterxml.jackson.module:jackson-modules-java8:2.19.2'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.20.0'
+    runtimeOnly 'com.fasterxml.jackson.module:jackson-modules-java8:2.20.0'
     implementation("io.micronaut.aws:micronaut-aws-sdk-v2")
     implementation("io.micronaut.reactor:micronaut-reactor")
     implementation("io.micronaut.security:micronaut-security-oauth2")
@@ -37,11 +37,11 @@ dependencies {
     implementation("io.micronaut.views:micronaut-views-thymeleaf")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("org.yaml:snakeyaml")
-    aotPlugins platform("io.micronaut.platform:micronaut-platform:4.9.2")
+    aotPlugins platform("io.micronaut.platform:micronaut-platform:4.9.3")
     aotPlugins("io.micronaut.security:micronaut-security-aot")
     implementation("io.micronaut:micronaut-management")
     implementation("software.amazon.awssdk:dynamodb-enhanced")
-    testImplementation 'net.bytebuddy:byte-buddy:1.17.6'
+    testImplementation 'net.bytebuddy:byte-buddy:1.17.7'
     testImplementation 'org.objenesis:objenesis:3.4'
 }
 
